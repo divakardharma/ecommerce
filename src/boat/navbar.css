@@ -1,0 +1,319 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Metropolis' sans-serif;
+  box-sizing: border-box;
+}
+.header{
+  background: #080808;
+  color: #fff;
+}
+.logo{
+  height: 55px;
+  user-select: none;
+  
+  cursor: pointer;
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px 10%;
+  background: #ffffff;
+  
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+}
+nav ul{
+  
+  margin-left: -20%;
+ 
+  
+}
+
+
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 15px 15px 10px 10px ;
+ 
+  
+}
+nav ul li p{
+  color:#313131 ;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight:500;
+  font-family: 'Metropolis', sans-serif;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: -5px;
+  user-select: none;
+ 
+}
+
+nav ul li p::after{
+  content:'';
+  width: 0;
+  height: 3px;
+  background: #0270f7;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li p:hover::after{
+  width: 100%;
+
+}
+
+.dropdown{
+  color: #030202;
+  
+  user-select: none;
+}
+.dropdown::after{
+  content:'';
+  width: 0;
+  height: 3px;
+  
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  transition: 0.5s;
+}
+.dropdown:hover::after{
+  width: 100%;
+
+}
+
+
+
+nav .ul .li{
+  
+  display: inline-block;
+  list-style: none;
+  margin: 15px 5px 10px 10px ;
+  
+  
+}
+nav .ul .li p{
+  color:#313131 ;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight:500;
+  font-family: 'Metropolis', sans-serif;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: -5px;
+
+}
+nav .ul .li p:hover{
+  font-weight:600;
+  transition: 0.5s;
+}
+.navicon1{
+  height: 20px;
+  width: 20px;
+  margin-left: 45px;
+  color: gray;
+}
+.navicon2{
+  height: 20px;
+  width: 20px;
+  margin-left: 50px;
+  color: skyblue;
+}
+.navicon3{
+  height: 20px;
+  width: 20px;
+  margin-left: 25px;
+  color: black;
+}
+.navicon4{
+  height: 20px;
+  width: 20px;
+  margin-left: 49px;
+  color: red;
+}
+.navicon5{
+  height: 20px;
+  width: 20px;
+  margin-left: 27px;
+  color: yellowgreen;
+}
+
+
+
+.fa-solid{
+  font-size: 20px;
+  color: #080808;
+}
+nav .closemenu{
+  display: none;
+}
+nav .openmenu{
+  display: none;
+}
+nav .search-icon{
+  display: none;
+}
+.nav-right{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 25%;
+  background-color: #ffffff;
+  
+}
+.nav-search{
+  height: 40px;
+  width: 70%;
+  border-radius: 30px;
+  border: none;
+  padding: 20px 10%;
+  
+  background-color: #e3e3ff;
+
+}
+.nav-back{
+  background: #fff;
+  height: 60px;
+  width: 100%;
+}
+.searchicons{
+  color: #030202;
+  height: 20px;
+  width: 20px;
+  
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.toggle-button {
+  display: none;
+
+}
+
+.drawer {
+    display: none;
+ }
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -250px; 
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  z-index: 1050; 
+}
+
+.drawer.open {
+  right: 0;
+}
+.fa-solid {
+  background-color: white;
+}
+
+.drawer .nav-link {
+  padding: 5px 0px 0px 15px ;
+  text-align: left;
+}
+
+
+@media only screen and (max-width: 1500px) {
+  nav .openmenu{
+      display: block;
+  }
+  nav ul{
+      display: none;
+  }
+  .logo{
+      height: 35px;
+       margin-left: -20px;
+      cursor: pointer;
+     
+  }   
+
+  .toggle-button {
+      display: block; 
+      z-index: 1150;
+      position: fixed;
+    }
+  
+    .drawer {
+      display: block;
+    }
+    .button{
+      border: none;
+      margin-top: 13px;
+      margin-left: 20px;
+        }
+        .nav-back{
+          height: 40px;
+      }
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .logo{
+      height: 30px;
+       margin-left: 50px;
+     
+  }
+
+
+  .fa-solid{
+      font-size: 20px;
+      color: #080808;
+  }
+  .nav-right{
+      width: 55%;
+      margin-right: -30px;
+   
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .logo{
+      height: 36px;
+       margin-left: 13px;
+      cursor: pointer;
+    
+  }
+  
+  .nav-right{
+      width: 63%;
+      margin-right: -30px;
+      
+  }
+  .nav-search{
+    height: 30px;
+    width: 70%;
+    border-radius: 30px;
+    border: none;
+    padding: 0px 10%;
+    
+    background-color: #e3e3ff;
+  
+  }
+}

@@ -1,0 +1,9 @@
+.car{
+    width: 80%;
+    height: 70%;
+    align-items: center;
+}
+.carouselmain{
+    align-items: center;
+    text-align: center;
+}
