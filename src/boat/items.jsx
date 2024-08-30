@@ -254,18 +254,18 @@ const buynow=()=>{
             <div className="buttons">
               <button onClick={buynow} className="buy">Buy it Now</button>
             </div>
-            <ul className="options">
-              <li><LuArrowDownUp className='updown'/>< button className='askbtn' >Compare</button></li>
-              <li><a><FaRegQuestionCircle className='updown' /> <button className='askbtn'onClick={deli} >Ask a question</button></a></li>
-              <li ><a><TbTruckDelivery className='updown'/><button className='askbtn'  onClick={Askclick}>Delivery & Return</button></a></li>
-              <li><a ><IoShareSocialSharp className='updown' /><button className='askbtn'>Share</button></a></li>
-            </ul>
-             <div className='paymemtdiv' data-aos="zoom-in">
-            <img src={Payment} className="payment" alt="Payment options" /></div>
+              <ul className="options">
+                <li><LuArrowDownUp className='updown'/>< button className='askbtn' >Compare</button></li>
+                <li><a><FaRegQuestionCircle className='updown' /> <button className='askbtn'onClick={deli} >Ask a question</button></a></li>
+                <li ><a><TbTruckDelivery className='updown'/><button className='askbtn'  onClick={Askclick}>Delivery & Return</button></a></li>
+                <li><a ><IoShareSocialSharp className='updown' /><button className='askbtn'>Share</button></a></li>
+              </ul>
+              <div className='paymemtdiv' data-aos="zoom-in">
+              <img src={Payment} className="payment" alt="Payment options" /></div>
+            </div>
           </div>
-        </div>
-    
-    </div>
+      
+      </div>  
     </>
   );
 }
