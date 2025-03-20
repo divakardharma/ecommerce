@@ -37,7 +37,7 @@ const data2=[
 const data3=[
     { pname: 'Men`s Casual Daily Wear Track Pant - Blue',  price:  '₹199', del: '₹719', size: 'M  L  XL', hour: '50%', color1: 'red', color2: 'black', color3: 'blue', colormore: '+5', image1: Track9              ,id:'tr9' },
     { pname: 'Men`s Casual Daily Wear Track Pant - Green', price: '₹199', del: '₹719', size: 'M  L', hour: '50%', color1: 'grey', color2: 'white', color3: 'black', colormore: '+4', image1: Track10                        ,id:'tr10' },
-    { pname: 'Men`s Casual Daily Wear Track Pant - Black', price: '₹199', del: '₹719',size: 'S  M  L  XL', hour: '50%', color1: 'red', color2: 'black', color3: 'blue', colormore: '+3', image1:Track11 ,id:'tr11' },
+    { pname: 'Men`s Casual Daily Wear Track Pant - Dark Black', price: '₹199', del: '₹719',size: 'S  M  L  XL', hour: '50%', color1: 'red', color2: 'black', color3: 'blue', colormore: '+3', image1:Track11 ,id:'tr11' },
     { pname: 'Men`s Casual Daily Wear Track Pant - White', price: '₹199', del: '₹719', size: 'M  XL', hour: '50%', color1: 'red', color2: 'black', color3: 'blue', colormore: '+5', image1: Track12           ,id:'tr12' },
 
 ]
